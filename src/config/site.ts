@@ -3,17 +3,17 @@ import prayagAvatar from "@/assets/prayag-avatar.jpg";
 
 export const siteConfig = {
   bot: {
-    name: "Nebula",
+    name: "Aerox",
     tagline: "The next-generation Discord bot",
     description:
-      "Nebula is an all-in-one Discord bot crafted for modern communities. Moderation, music, fun, utilities — beautifully designed and lightning fast.",
+      "Aerox is an all-in-one Discord bot crafted for modern communities. Moderation, music, fun, utilities — beautifully designed and lightning fast.",
     version: "v3.2.0",
     servers: "120K+",
     users: "8.4M+",
     commands: 240,
     uptime: "99.99%",
     inviteUrl: "https://discord.com/oauth2/authorize",
-    supportUrl: "https://discord.gg/your-server",
+    supportUrl: "https://discord.gg/aerox",
   },
 
   nav: [
@@ -110,16 +110,16 @@ export const siteConfig = {
 
   team: [
     {
-      name: "Prayag",
+      name: "AeroX 1",
       role: "Founder & Lead Developer",
       bio: "Architects the core. Loves clean code and 3am refactors.",
       avatar: prayagAvatar,
       socials: { github: "#", twitter: "#" },
     },
     {
-      name: "Priyanshu",
+      name: "AeroX 2",
       role: "Product Designer",
-      bio: "Crafts the pixels you fall in love with. Liquid glass enthusiast.",
+      bio: "Crafts the pixels you fall in love with.",
       avatar: "",
       socials: { github: "#", twitter: "#" },
     },
@@ -127,20 +127,20 @@ export const siteConfig = {
 
   faqs: [
     {
-      q: "Is Nebula free to use?",
-      a: "Yes — all core features are completely free. We offer an optional Premium tier for advanced music quality and exclusive customization.",
+      q: "Is Aerox free to use?",
+      a: "Yes, all core features are completely free. We offer an optional Premium tier for advanced music quality and exclusive customization.",
     },
     {
-      q: "How do I add Nebula to my server?",
+      q: "How do I add Aerox to my server?",
       a: "Click the Invite button anywhere on the site, authorize the bot with the Manage Server permission, and you are ready in seconds.",
     },
     {
-      q: "Does Nebula store my messages?",
+      q: "Does Aerox store my messages?",
       a: "No. We only store configuration data essential for commands. See our Privacy page for full details.",
     },
     {
       q: "Can I request a new feature?",
-      a: "Absolutely. Join our support server and post in the #suggestions channel — we ship community ideas every week.",
+      a: "Absolutely. Join our support server and post in the #suggestions channel, we ship community ideas every week.",
     },
     {
       q: "What happens if the bot goes offline?",
@@ -149,20 +149,20 @@ export const siteConfig = {
   ],
 
   contact: {
-    email: "hello@nebula-bot.app",
-    discord: "https://discord.gg/your-server",
-    github: "https://github.com/nebula-bot",
+    email: "xyz@gmail.com",
+    discord: "https://discord.gg/aerox",
+    github: "https://github.com/AeroXDevs",
     twitter: "https://twitter.com/nebula_bot",
   },
 
   socials: [
     { icon: Github, href: "#", label: "GitHub" },
     { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "mailto:hello@nebula-bot.app", label: "Email" },
+    { icon: Mail, href: "xyz@gmail.com", label: "Email" },
   ],
 
   privacy: {
-    lastUpdated: "March 12, 2025",
+    lastUpdated: "April 18 2026",
     sections: [
       {
         title: "Information We Collect",
