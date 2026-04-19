@@ -3,6 +3,7 @@ import { Features } from "@/components/sections/Features";
 import { TeamShowcase } from "@/components/sections/TeamShowcase";
 import { Faqs } from "@/components/sections/Faqs";
 import { CtaBanner } from "@/components/sections/CtaBanner";
+import { StatsMarquee } from "@/components/sections/StatsMarquee";
 import { siteConfig } from "@/config/site";
 import { useEffect } from "react";
 
@@ -16,6 +17,7 @@ const Index = () => {
   return (
     <>
       <Hero />
+      <StatsMarquee />
       <Features />
       <TeamShowcase />
       <Faqs />

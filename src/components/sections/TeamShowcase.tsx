@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Github, Twitter } from "lucide-react";
 import { siteConfig } from "@/config/site";
+import { SplitTextReveal } from "@/components/reactbits/SplitTextReveal";
 
 export const TeamShowcase = () => {
   return (
@@ -12,9 +13,11 @@ export const TeamShowcase = () => {
         className="text-center max-w-2xl mx-auto"
       >
         <span className="text-xs font-semibold uppercase tracking-widest text-primary">Developers</span>
-        <h2 className="mt-3 font-display font-bold text-4xl md:text-5xl tracking-tight">
-          Built by a tiny, obsessed team
-        </h2>
+        <SplitTextReveal
+          as="h2"
+          text="Built by a tiny, obsessed team"
+          className="mt-3 font-display font-bold text-4xl md:text-5xl tracking-tight"
+        />
         <p className="mt-4 text-muted-foreground">
           The humans behind {siteConfig.bot.name}. Designers, engineers, dreamers.
         </p>

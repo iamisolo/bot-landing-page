@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { siteConfig } from "@/config/site";
+import { SplitTextReveal } from "@/components/reactbits/SplitTextReveal";
 
 export const Features = () => {
   return (
@@ -11,9 +12,11 @@ export const Features = () => {
         className="text-center max-w-2xl mx-auto"
       >
         <span className="text-xs font-semibold uppercase tracking-widest text-primary">Features</span>
-        <h2 className="mt-3 font-display font-bold text-4xl md:text-5xl tracking-tight">
-          Everything your server needs
-        </h2>
+        <SplitTextReveal
+          as="h2"
+          text="Everything your server needs"
+          className="mt-3 font-display font-bold text-4xl md:text-5xl tracking-tight"
+        />
         <p className="mt-4 text-muted-foreground">
           Carefully crafted modules that work together seamlessly. Every command, every interaction — refined.
         </p>

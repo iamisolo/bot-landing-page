@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { siteConfig } from "@/config/site";
+import { MagneticButton } from "@/components/reactbits/MagneticButton";
+import { SplitTextReveal } from "@/components/reactbits/SplitTextReveal";
 
 export const CtaBanner = () => {
   return (
@@ -15,21 +17,27 @@ export const CtaBanner = () => {
       >
         <div className="absolute inset-0 bg-aurora opacity-20 animate-aurora" />
         <div className="relative">
-          <h2 className="font-display font-bold text-4xl md:text-5xl tracking-tight">
-            Ready to upgrade your server?
-          </h2>
+          <SplitTextReveal
+            as="h2"
+            text="Ready to upgrade your server?"
+            className="font-display font-bold text-4xl md:text-5xl tracking-tight"
+          />
           <p className="mt-4 text-muted-foreground max-w-xl mx-auto">
             Join {siteConfig.bot.servers} communities already using {siteConfig.bot.name}. Free forever, no credit card.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 justify-center">
-            <Button asChild variant="hero" size="xl">
-              <a href={siteConfig.bot.inviteUrl} target="_blank" rel="noreferrer">
-                Invite {siteConfig.bot.name} <ArrowRight className="h-4 w-4" />
-              </a>
-            </Button>
-            <Button asChild variant="glass" size="xl">
-              <a href={siteConfig.bot.supportUrl} target="_blank" rel="noreferrer">Get Support</a>
-            </Button>
+            <MagneticButton>
+              <Button asChild variant="hero" size="xl">
+                <a href={siteConfig.bot.inviteUrl} target="_blank" rel="noreferrer">
+                  Invite {siteConfig.bot.name} <ArrowRight className="h-4 w-4" />
+                </a>
+              </Button>
+            </MagneticButton>
+            <MagneticButton>
+              <Button asChild variant="glass" size="xl">
+                <a href={siteConfig.bot.supportUrl} target="_blank" rel="noreferrer">Get Support</a>
+              </Button>
+            </MagneticButton>
           </div>
         </div>
       </motion.div>
