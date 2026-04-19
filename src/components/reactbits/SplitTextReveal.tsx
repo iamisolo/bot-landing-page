@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, createElement } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -8,10 +8,10 @@ interface SplitTextRevealProps {
   text: string;
   className?: string;
   delay?: number;
-  as?: keyof JSX.IntrinsicElements;
+  as?: "h1" | "h2" | "h3" | "h4" | "p" | "span" | "div";
 }
 
-export const SplitTextReveal = ({ text, className = "", delay = 0, as: Tag = "h2" }: SplitTextRevealProps) => {
+export const SplitTextReveal = ({ text, className = "", delay = 0, as = "h2" }: SplitTextRevealProps) => {
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -35,17 +35,15 @@ export const SplitTextReveal = ({ text, className = "", delay = 0, as: Tag = "h2
 
   const words = text.split(" ");
 
-  return (
-    <Tag ref={ref as never} className={className} aria-label={text}>
-      {words.map((w, wi) => (
-        <span key={wi} className="inline-block whitespace-nowrap mr-[0.25em]" style={{ perspective: 600 }}>
-          {Array.from(w).map((c, ci) => (
-            <span key={ci} className="inline-block overflow-hidden align-baseline">
-              <span data-char className="inline-block will-change-transform">{c}</span>
-            </span>
-          ))}
+  const content = words.map((w, wi) => (
+    <span key={wi} className="inline-block whitespace-nowrap mr-[0.25em]" style={{ perspective: 600 }}>
+      {Array.from(w).map((c, ci) => (
+        <span key={ci} className="inline-block overflow-hidden align-baseline">
+          <span data-char className="inline-block will-change-transform">{c}</span>
         </span>
       ))}
-    </Tag>
-  );
+    </span>
+  ));
+
+  return createElement(as, { ref, className, "aria-label": text }, content);
 };
