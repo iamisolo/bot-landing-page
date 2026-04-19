@@ -19,7 +19,9 @@ export const SplitTextReveal = ({ text, className = "", delay = 0, as = "h2" }: 
     if (!el) return;
     const chars = el.querySelectorAll<HTMLSpanElement>("[data-char]");
     const ctx = gsap.context(() => {
-      gsap.from(chars, {
+      const rect = el.getBoundingClientRect();
+      const inView = rect.top < window.innerHeight * 0.95 && rect.bottom > 0;
+      const animConfig: gsap.TweenVars = {
         yPercent: 120,
         opacity: 0,
         rotateX: -80,
@@ -27,8 +29,15 @@ export const SplitTextReveal = ({ text, className = "", delay = 0, as = "h2" }: 
         duration: 0.9,
         delay,
         ease: "expo.out",
-        scrollTrigger: { trigger: el, start: "top 85%", once: true },
-      });
+      };
+      if (inView) {
+        gsap.from(chars, animConfig);
+      } else {
+        gsap.from(chars, {
+          ...animConfig,
+          scrollTrigger: { trigger: el, start: "top 85%", once: true },
+        });
+      }
     }, el);
     return () => ctx.revert();
   }, [delay]);
