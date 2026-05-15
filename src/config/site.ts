@@ -155,10 +155,10 @@ export const siteConfig = {
   },
 
   socials: [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "mailto:xyz@gmail.com", label: "Email" },
-  ],
+  { icon: Globe, href: "https://www.youtube.com/@IAmISolo", label: "YouTube" },
+  { icon: Sparkles, href: "https://www.instagram.com/iamisolo", label: "Instagram" },
+  { icon: MessageSquare, href: "https://discord.gg/McpypWYTDX", label: "Discord" },
+],
 
   privacy: {
     lastUpdated: "April 18 2026",
