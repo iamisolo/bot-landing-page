@@ -3,17 +3,17 @@ import prayagAvatar from "@/assets/prayag-avatar.jpg";
 
 export const siteConfig = {
   bot: {
-    name: "Aerox",
+    name: "Solo Bot",
     tagline: "The next-generation Discord bot",
     description:
-      "Aerox is an all-in-one Discord bot crafted for modern communities. Moderation, music, fun, utilities — beautifully designed and lightning fast.",
+      "Solo Bot is an all-in-one Discord bot crafted for modern communities. Moderation, music, fun, utilities — beautifully designed and lightning fast.",
     version: "v3.2.0",
-    servers: "120K+",
-    users: "8.4M+",
+    servers: "50+",
+    users: "2k+",
     commands: 240,
     uptime: "99.99%",
     inviteUrl: "https://discord.com/oauth2/authorize",
-    supportUrl: "https://discord.gg/aerox",
+    supportUrl: "https://discord.gg/McpypWYTDX",
   },
 
   nav: [
@@ -110,14 +110,14 @@ export const siteConfig = {
 
   team: [
     {
-      name: "AeroX 1",
+      name: "Solo Dev",
       role: "Founder & Lead Developer",
-      bio: "Architects the core. Loves clean code and 3am refactors.",
+      bio: "Architects the core. Loves clean code and late-night debugging.",
       avatar: prayagAvatar,
       socials: { github: "#", twitter: "#" },
     },
     {
-      name: "AeroX 2",
+      name: "Solo Team",
       role: "Product Designer",
       bio: "Crafts the pixels you fall in love with.",
       avatar: "",
@@ -127,38 +127,37 @@ export const siteConfig = {
 
   faqs: [
     {
-      q: "Is Aerox free to use?",
-      a: "Yes, all core features are completely free. We offer an optional Premium tier for advanced music quality and exclusive customization.",
+      q: "Is Solo Bot free to use?",
+      a: "Yes, all core features are completely free. Premium features may be added in the future.",
     },
     {
-      q: "How do I add Aerox to my server?",
-      a: "Click the Invite button anywhere on the site, authorize the bot with the Manage Server permission, and you are ready in seconds.",
+      q: "How do I add Solo Bot to my server?",
+      a: "Click the Invite button anywhere on the site and authorize the bot.",
     },
     {
-      q: "Does Aerox store my messages?",
-      a: "No. We only store configuration data essential for commands. See our Privacy page for full details.",
+      q: "Does Solo Bot store my messages?",
+      a: "No. Only necessary configuration data is stored.",
     },
     {
       q: "Can I request a new feature?",
-      a: "Absolutely. Join our support server and post in the #suggestions channel, we ship community ideas every week.",
+      a: "Yes, join our Discord server and suggest features.",
     },
     {
       q: "What happens if the bot goes offline?",
-      a: "Our infrastructure is multi-region with automatic failover. In the rare case of downtime, status updates are posted to our support server immediately.",
+      a: "We use high uptime infrastructure. Updates are posted in our Discord.",
     },
   ],
 
   contact: {
-    email: "xyz@gmail.com",
-    discord: "https://discord.gg/aerox",
-    github: "https://github.com/AeroXDevs",
-    twitter: "https://twitter.com/nebula_bot",
+    youtube: "https://www.youtube.com/@IAmISolo",
+    instagram: "https://www.instagram.com/iamisolo",
+    discord: "https://discord.gg/McpypWYTDX",
   },
 
   socials: [
     { icon: Github, href: "#", label: "GitHub" },
     { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "xyz@gmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:xyz@gmail.com", label: "Email" },
   ],
 
   privacy: {
@@ -166,19 +165,19 @@ export const siteConfig = {
     sections: [
       {
         title: "Information We Collect",
-        body: "We collect minimal data required for the bot to function: server IDs, channel IDs, role IDs, and configuration preferences. We never store message content unless explicitly enabled by a server administrator for logging features.",
+        body: "We collect minimal data required for the bot to function.",
       },
       {
         title: "How We Use Your Data",
-        body: "Your data is used solely to provide bot functionality such as remembering your server's prefix, custom commands, moderation logs, and music queues. We do not sell, rent, or share your data with third parties.",
+        body: "Your data is used only for bot functionality.",
       },
       {
         title: "Data Retention",
-        body: "Configuration data persists while the bot remains in your server. When Nebula is removed, all associated data is automatically purged within 30 days.",
+        body: "When Solo Bot is removed, all data is deleted within 30 days.",
       },
       {
         title: "Your Rights",
-        body: "You may request a full export or deletion of your data at any time by contacting our support team via email or Discord.",
+        body: "You can request deletion anytime.",
       },
     ],
   },
@@ -187,15 +186,15 @@ export const siteConfig = {
     sections: [
       {
         title: "Acceptable Use",
-        body: "By using Nebula, you agree not to abuse the service, attempt to bypass rate limits, or use the bot for illegal activities. Violations may result in a permanent ban from the service.",
+        body: "Do not misuse Solo Bot or use it for illegal activities.",
       },
       {
         title: "Service Availability",
-        body: "While we target 99.99% uptime, Nebula is provided as-is. We are not liable for service interruptions, data loss, or damages arising from use of the bot.",
+        body: "Solo Bot is provided as-is with high uptime but no guarantees.",
       },
       {
-        title: "Changes to These Terms",
-        body: "We may update these terms occasionally. Continued use after changes constitutes acceptance of the updated terms.",
+        title: "Changes to Terms",
+        body: "We may update terms anytime.",
       },
     ],
   },
