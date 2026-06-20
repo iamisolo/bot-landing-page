@@ -3,13 +3,24 @@ import { AnimatePresence, motion } from "framer-motion";
 import { AuroraBackground } from "./AuroraBackground";
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
+import AdBanner from "../AdBanner"; // ✅ IMPORT AD
 
 export const Layout = () => {
   const location = useLocation();
+
   return (
     <div className="relative min-h-screen flex flex-col">
       <AuroraBackground />
+
+      {/* Navbar */}
       <Navbar />
+
+      {/* 🔥 TOP AD (BEST POSITION) */}
+      <div className="px-4">
+        <AdBanner />
+      </div>
+
+      {/* Main Content */}
       <main className="flex-1 pt-28">
         <AnimatePresence mode="wait">
           <motion.div
@@ -23,6 +34,13 @@ export const Layout = () => {
           </motion.div>
         </AnimatePresence>
       </main>
+
+      {/* 🔥 BOTTOM AD (SECOND BEST) */}
+      <div className="px-4 mb-4">
+        <AdBanner />
+      </div>
+
+      {/* Footer */}
       <Footer />
     </div>
   );
